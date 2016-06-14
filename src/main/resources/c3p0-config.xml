@@ -1,0 +1,26 @@
+<c3p0-config>
+	<!-- c3p0默认缺少配置，即ComboPooledDataSource c3p0DataSource = new ComboPooledDataSource() -->
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://192.168.91.201:3306/robot</property>
+		<property name="user">robot</property>
+		<property name="password">robot</property>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">10</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">20</property>
+	</default-config>
+
+	<!-- c3p0命名配置，即ComboPooledDataSource c3p0DataSource = new ComboPooledDataSource("mysql") -->
+	<named-config name="mysql">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://192.168.91.201:3306/robot</property>
+		<property name="user">robot</property>
+		<property name="password">robot</property>
+		<property name="acquireIncrement">15</property>
+		<property name="initialPoolSize">15</property>
+		<property name="minPoolSize">6</property>
+		<property name="maxPoolSize">40</property>	
+	</named-config>
+	
+</c3p0-config>
