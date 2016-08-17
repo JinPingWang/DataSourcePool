@@ -10,7 +10,7 @@ public class DatasourceDriverManager {
 	private Map<String, DatasourcePool> pools;
 	private volatile static DatasourceDriverManager datasourceDriverManager;
 	
-	public DatasourceDriverManager() throws FileNotFoundException, SQLException{
+	private DatasourceDriverManager() throws FileNotFoundException, SQLException{
 		pools = new HashMap<String, DatasourcePool>();
 		DatasourceConfig datasourceConfig = new DatasourceConfig();
 		for(DatasourceConfigBean datasourceConfigBean : datasourceConfig.getDatasourceConfigBeanList()){
