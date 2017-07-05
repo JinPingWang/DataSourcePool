@@ -56,7 +56,8 @@
 
   <build>
   	 <plugins>
-  	  <!-- maven打包时用于跳过Test -->  
+  	  <!-- maven打包时用于跳过Test -->
+
       <plugin>  
         <groupId>org.apache.maven.plugins</groupId>  
         <artifactId>maven-surefire-plugin</artifactId>  
