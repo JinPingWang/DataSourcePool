@@ -18,7 +18,7 @@ public class Controller extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{
 
-		
+		System.out.println("test");
 		/**
 		 * 3：将图片信息写回客户端
 		 */
